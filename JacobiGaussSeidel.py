@@ -31,7 +31,7 @@ def Jacobi(mtx, vector_b):
         print(f'#{count} iteration: x = {x}\ty = {y}\tz = {z}')
 
         # if the matrix does not have dominant diagonal, and it didn't converge after 100 iterations, then:
-        if count > iterate_if_not_dom and not flag:
+        if count == iterate_if_not_dom and not flag:
             print("The system does not converge!\n")
             return
 
@@ -244,3 +244,8 @@ if x == 1:
 else:
     print("Solving by GaussSeidel method:")
     GaussSeidel(matrixA, vectorB)
+
+
+
+
+
